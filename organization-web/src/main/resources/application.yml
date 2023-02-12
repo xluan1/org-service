@@ -1,0 +1,36 @@
+#config eureka
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+#config server
+server:
+  port: 8084
+  servlet:
+    context-path: /org-service
+    encoding:
+      charset: UTF-8
+      force-response: true
+#config database
+spring:
+  application:
+    name: org-service
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/test_erp_org?createDatabaseIfNotExist=true
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+
+#OpenAPI 3
+springdoc:
+  api-docs:
+    path: /api-docs

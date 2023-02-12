@@ -1,0 +1,17 @@
+{
+  "organization": {
+    "orgId": "all",
+    "name": "all",
+    "description": "Đây là tổ chức của nhà phát triển"
+  },
+  "organizationInfo": {
+    "address": "tỉnh Ninh Thuận",
+    "phoneNumber": "0896958xxx",
+    "email": "luandeveloper2001@gmail.com",
+    "country": "Việt Nam",
+    "leaderName": "Luân"
+  },
+  "storageProvider": {
+    "capacity": 9999
+  }
+}
